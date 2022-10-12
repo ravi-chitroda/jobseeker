@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Landing from "./pages/Landing";
+import Register from "./pages/Register";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Landing />} />
+        <Route path="/register" element={<Register />} />
       </Routes>
     </BrowserRouter>
   );
